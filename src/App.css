@@ -1,0 +1,9 @@
+html, .bg{
+    background-color: rgb(29, 28, 28);
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden;
+}
+.hide {
+    display: none;
+    background-color: transparent;
+}
