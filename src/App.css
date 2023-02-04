@@ -7,3 +7,7 @@ html, .bg{
     display: none;
     background-color: transparent;
 }
+
+.summary {
+    font-family: Arial, Helvetica, sans-serif;
+}

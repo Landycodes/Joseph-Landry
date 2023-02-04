@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Podcast() {
   return (
-    <div className="d-flex flex-column align-items-center h-100">
+    <div className="d-flex flex-column align-items-center h-100 mt-4">
       <img
         src="ATP.jpg"
         alt="alien talk podcast"

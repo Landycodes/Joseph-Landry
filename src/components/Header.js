@@ -21,7 +21,12 @@ export default function Header({ currentPage, changePage }) {
       </div>
       <div
         className={`bg-dark ${toggleHide === true ? "hide" : ""}`}
-        style={{ width: "100vw", height: "100vh" }}
+        style={{
+          width: "100vw",
+          height: "100vh",
+          position: "absolute",
+          zIndex: "2",
+        }}
       >
         <ul
           className="list-unstyled d-flex flex-column align-items-center"
