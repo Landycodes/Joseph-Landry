@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Joseph-Landry/static/css/main.528e7883.css",
+    "main.js": "/Joseph-Landry/static/js/main.75985fb3.js",
+    "index.html": "/Joseph-Landry/index.html",
+    "main.528e7883.css.map": "/Joseph-Landry/static/css/main.528e7883.css.map",
+    "main.75985fb3.js.map": "/Joseph-Landry/static/js/main.75985fb3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.528e7883.css",
+    "static/js/main.75985fb3.js"
+  ]
+}
