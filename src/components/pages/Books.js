@@ -22,7 +22,7 @@ export default function Books() {
         <div></div>
       </a>
       <h3 className="mt-5 mb-1">Summary</h3>
-      <p className="summary text-center p-2">
+      <p className="summary text-center p-3">
         Ghoulish deaths of three Catholic priests, the insides of their bodies
         seemingly burned away, baffles the London Metropolitan Police Department
         in 1920. Inspector John Nelson is requested by Commissioner Edward
@@ -37,7 +37,7 @@ export default function Books() {
         uncanny deaths.
       </p>
       <br></br>
-      <p className="summary text-center p-2">
+      <p className="summary text-center p-3">
         He also describes a secret ancient cabal known as the Brotherhood of the
         Snake, which is believed to have once possessed the Amulet of Solomon, a
         mystical relic that is a source of this power and can be traced to
@@ -50,7 +50,7 @@ export default function Books() {
         Solomon and free their lord, Asmodeus, who is imprisoned inside of it.
       </p>
       <br></br>
-      <p className="summary text-center mb-5 p-2">
+      <p className="summary text-center mb-5 p-3">
         John comes to find that there is truth to what Alex has been saying,
         that evil forces are killing people with a supernatural energy. The
         investigation leads them across the English countryside to find the
