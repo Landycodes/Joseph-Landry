@@ -18,7 +18,23 @@ html, .bg{
 }
 
 @keyframes slide-out{
-    100% {transform: translateX(110vw); display: none;}
+    100% {
+        transform: translateX(110vw); 
+        display: none;
+    }
+}
+
+@keyframes slide-up{
+    0% {
+        transform: translateY(110vh);
+    }
+}
+
+@keyframes slide-down{
+    100% {
+        transform: translateY(110vh);
+        display: none;
+    }
 }
 
 .slide-in {
@@ -30,6 +46,19 @@ html, .bg{
 .slide-out {
     animation-name: slide-out;
     animation-duration: .5s;
-    animation-timing-function: ease-out;
+    /* animation-timing-function: ease-in; */
     animation-fill-mode: forwards;
+}
+
+.slide-up {
+    animation-name: slide-up;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+}
+
+.slide-down {
+    animation-name: slide-down;
+    animation-duration: .5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards; 
 }

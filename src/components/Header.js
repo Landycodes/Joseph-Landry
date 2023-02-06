@@ -1,8 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Header({ currentPage, changePage }) {
-  const [toggleHide, setHide] = useState(true);
+  const [hide, setHide] = useState(true);
   const [slideOrHide, setSlide] = useState("hide");
+  // useEffect(() => {
+  if (slideOrHide === "slide-out") {
+    setTimeout(() => {
+      setSlide("hide");
+    }, 500);
+  }
+  // }, [hide]);
 
   return (
     <div>
@@ -20,13 +27,14 @@ export default function Header({ currentPage, changePage }) {
           }}
           onClick={() => {
             setSlide("slide-out");
-            setHide(!toggleHide);
+            setHide(!hide);
           }}
         />
       </div>
+      {/* menu card */}
       <div
         id="menu"
-        className={`bg-dark ${toggleHide === true ? slideOrHide : "slide-in"}`}
+        className={`bg-dark ${hide === true ? slideOrHide : "slide-in"}`}
         style={{
           width: "100vw",
           height: "100vh",
@@ -45,8 +53,9 @@ export default function Header({ currentPage, changePage }) {
                 currentPage === "Home" ? "hide" : ""
               }`}
               onClick={() => {
-                changePage("Home");
+                setSlide("slide-out");
                 setHide(true);
+                changePage("Home");
               }}
             >
               Home
@@ -60,6 +69,7 @@ export default function Header({ currentPage, changePage }) {
               }`}
               onClick={() => {
                 changePage("Podcast");
+                setSlide("slide-out");
                 setHide(true);
               }}
             >
@@ -74,6 +84,7 @@ export default function Header({ currentPage, changePage }) {
               }`}
               onClick={() => {
                 changePage("Books");
+                setSlide("slide-out");
                 setHide(true);
               }}
             >
@@ -88,6 +99,7 @@ export default function Header({ currentPage, changePage }) {
               }`}
               onClick={() => {
                 changePage("Contact");
+                setSlide("slide-out");
                 setHide(true);
               }}
             >

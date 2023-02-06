@@ -2,10 +2,11 @@ import React, { useState } from "react";
 
 export default function Home() {
   const [info, setInfo] = useState(true);
+  const [slideOrHide, setSlide] = useState("hide");
   return (
     <div>
       <div
-        className={`${info === true ? "hide" : ""}`}
+        className={`${info === true ? slideOrHide : "slide-up"}`}
         style={{
           backgroundColor: "rgb(29, 28, 28)",
           width: "100vw",
@@ -22,7 +23,12 @@ export default function Home() {
               src="home/close.png"
               alt="close"
               className="float-end m-2"
-              onClick={() => setInfo(!info)}
+              onClick={() => {
+                setInfo(!info);
+                setTimeout(() => {
+                  setSlide("hide");
+                }, 500);
+              }}
               style={{ height: "40px", width: "auto" }}
             />
           </div>
@@ -46,7 +52,10 @@ export default function Home() {
       <button
         type="button"
         className="m-2 position-absolute btn btn-dark border border-white"
-        onClick={() => setInfo(!info)}
+        onClick={() => {
+          setSlide("slide-down");
+          setInfo(!info);
+        }}
       >
         About me
       </button>
