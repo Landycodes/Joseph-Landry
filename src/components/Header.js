@@ -8,7 +8,9 @@ export default function Header({ currentPage, changePage }) {
       setSlide("hide");
     }, 500);
   }
-
+  hide === false
+    ? (document.documentElement.style.overflowY = "hidden")
+    : (document.documentElement.style.overflowY = "visible");
   return (
     <div>
       <div className="d-flex justify-content-end align-items-center mt-2">
