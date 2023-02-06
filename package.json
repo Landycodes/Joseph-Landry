@@ -1,8 +1,8 @@
 {
   "name": "landing-page",
   "version": "0.1.0",
-  "homepage": "https://landycodes.github.io/Joseph-Landry",
   "private": true,
+  "homepage": "https://landycodes.github.io/Joseph-Landry",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

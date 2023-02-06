@@ -11,3 +11,25 @@ html, .bg{
 .summary {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes slide-in {
+   0% {transform: translateX(110vw);}
+
+}
+
+@keyframes slide-out{
+    100% {transform: translateX(110vw); display: none;}
+}
+
+.slide-in {
+    animation-name: slide-in;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+}
+
+.slide-out {
+    animation-name: slide-out;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 export default function Header({ currentPage, changePage }) {
   const [toggleHide, setHide] = useState(true);
+  const [slideOrHide, setSlide] = useState("hide");
+
   return (
     <div>
       <div className="d-flex justify-content-end align-items-center mt-2">
@@ -16,11 +18,15 @@ export default function Header({ currentPage, changePage }) {
             marginRight: "10px",
             marginLeft: "15px",
           }}
-          onClick={() => setHide(!toggleHide)}
+          onClick={() => {
+            setSlide("slide-out");
+            setHide(!toggleHide);
+          }}
         />
       </div>
       <div
-        className={`bg-dark ${toggleHide === true ? "hide" : ""}`}
+        id="menu"
+        className={`bg-dark ${toggleHide === true ? slideOrHide : "slide-in"}`}
         style={{
           width: "100vw",
           height: "100vh",
