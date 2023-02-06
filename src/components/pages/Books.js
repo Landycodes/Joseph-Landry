@@ -8,7 +8,8 @@ export default function Books() {
       <h4 className="mt-3">Available on</h4>
       <a
         href="https://www.amazon.com/Gnostics-Fire-Joseph-Landry/dp/1984569422"
-        className="d-flex justify-content-between align-items-end text-white text-decoration-none border p-2 w-50 rounded"
+        className="d-flex justify-content-between align-items-end text-white text-decoration-none border p-2 rounded"
+        style={{ width: "200px" }}
         target="_blank"
         rel="noreferrer"
       >

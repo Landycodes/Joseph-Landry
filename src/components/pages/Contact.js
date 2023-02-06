@@ -11,12 +11,22 @@ export default function Contact() {
           <h3 className="text-center">Contact</h3>
           <div className="d-flex flex-column align-items-center">
             <label htmlFor="name">Name</label>
-            <input id="name" type="text" placeholder="Enter name"></input>
+            <input
+              id="name"
+              type="text"
+              placeholder="Enter name"
+              required
+            ></input>
 
             <br></br>
 
             <label htmlFor="email">Email</label>
-            <input id="email" type="email" placeholder="Enter email"></input>
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter email"
+              required
+            ></input>
 
             <br></br>
 
@@ -25,6 +35,7 @@ export default function Contact() {
               id="msg"
               type="text"
               placeholder="Type a message"
+              required
             ></textarea>
           </div>
           <br></br>

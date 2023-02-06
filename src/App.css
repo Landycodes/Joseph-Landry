@@ -78,3 +78,16 @@ html, .bg{
         top: 5vh;
     }
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: #32373d;
+}

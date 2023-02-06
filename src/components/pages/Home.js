@@ -41,27 +41,33 @@ export default function Home() {
         </div>
       </div>
       {/* button and images*/}
-      <button
-        type="button"
-        className="m-2 position-absolute btn btn-dark border border-white"
-        onClick={() => {
-          setSlide("slide-down");
-          setInfo(!info);
-        }}
-      >
-        About me
-      </button>
+
       <div className="d-flex flex-column align-items-center mt-3 mb-5">
-        <img
-          src="home/profile.jpg"
-          alt="profile"
-          style={{
-            height: "200px",
-            width: "auto",
-            marginLeft: "75px",
-          }}
-          className="mb-3"
-        />
+        <div
+          className="d-flex justify-content-between"
+          style={{ width: "320px" }}
+        >
+          <button
+            type="button"
+            className="mt-2 mr-5 position-absolute btn btn-dark border border-white"
+            onClick={() => {
+              setSlide("slide-down");
+              setInfo(!info);
+            }}
+          >
+            About me
+          </button>
+          <img
+            src="home/profile.jpg"
+            alt="profile"
+            style={{
+              height: "200px",
+              width: "auto",
+              marginLeft: "125px",
+            }}
+            className="mb-3"
+          />
+        </div>
         <img
           src="home/bookfair.jpg"
           alt="bookfair"

@@ -44,7 +44,11 @@ export default function Header({ currentPage, changePage }) {
           className="list-unstyled d-flex flex-column align-items-center mt-2"
           style={{ fontSize: "30px" }}
         >
-          <li className="mt-3">
+          <li
+            className={`mt-3 ${
+              slideOrHide === "slide-out" && hide ? "hide" : ""
+            }`}
+          >
             <a
               href="#Home"
               className={`text-decoration-none text-white border-bottom ${
@@ -59,7 +63,11 @@ export default function Header({ currentPage, changePage }) {
               Home
             </a>
           </li>
-          <li className="mt-1">
+          <li
+            className={`mt-1 ${
+              slideOrHide === "slide-out" && hide ? "hide" : ""
+            }`}
+          >
             <a
               href="#Podcast"
               className={`text-decoration-none text-white border-bottom ${
@@ -74,7 +82,11 @@ export default function Header({ currentPage, changePage }) {
               Podcast
             </a>
           </li>
-          <li className="mt-1">
+          <li
+            className={`mt-1 ${
+              slideOrHide === "slide-out" && hide ? "hide" : ""
+            }`}
+          >
             <a
               href="#Books"
               className={`text-decoration-none text-white border-bottom ${
@@ -89,7 +101,11 @@ export default function Header({ currentPage, changePage }) {
               Books
             </a>
           </li>
-          <li className="mt-1">
+          <li
+            className={`mt-1 ${
+              slideOrHide === "slide-out" && hide ? "hide" : ""
+            }`}
+          >
             <a
               href="#Contact"
               className={`text-decoration-none text-white border-bottom ${
