@@ -3,8 +3,11 @@ import React from "react";
 export default function Contact() {
   return (
     <div>
-      <div>
-        <form className="bg-dark p-3 d-flex flex-column align-items-center m-3 rounded">
+      <div className="d-flex justify-content-center">
+        <form
+          className="bg-dark p-3 d-flex flex-column align-items-center m-3 rounded"
+          style={{ width: "300px" }}
+        >
           <h3 className="text-center">Contact</h3>
           <div className="d-flex flex-column align-items-center">
             <label htmlFor="name">Name</label>

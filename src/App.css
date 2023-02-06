@@ -46,7 +46,7 @@ html, .bg{
 .slide-out {
     animation-name: slide-out;
     animation-duration: .5s;
-    /* animation-timing-function: ease-in; */
+    animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
 
@@ -61,4 +61,20 @@ html, .bg{
     animation-duration: .5s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards; 
+}
+
+#popup {
+    background-color: rgb(29, 28, 28);
+    width: 100vw;
+    height: 150vh;
+    position: absolute;
+    opacity: .9;
+    z-index: 1;
+    top: 10vh;
+}
+
+@media screen and (max-width: 505px ){
+    #popup {
+        top: 5vh;
+    }
 }

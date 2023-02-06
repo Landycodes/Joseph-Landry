@@ -1,15 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 export default function Header({ currentPage, changePage }) {
   const [hide, setHide] = useState(true);
   const [slideOrHide, setSlide] = useState("hide");
-  // useEffect(() => {
   if (slideOrHide === "slide-out") {
     setTimeout(() => {
       setSlide("hide");
     }, 500);
   }
-  // }, [hide]);
 
   return (
     <div>
@@ -43,13 +41,13 @@ export default function Header({ currentPage, changePage }) {
         }}
       >
         <ul
-          className="list-unstyled d-flex flex-column align-items-center"
-          style={{ fontSize: "20px" }}
+          className="list-unstyled d-flex flex-column align-items-center mt-2"
+          style={{ fontSize: "30px" }}
         >
           <li className="mt-3">
             <a
               href="#Home"
-              className={`text-decoration-none text-white ${
+              className={`text-decoration-none text-white border-bottom ${
                 currentPage === "Home" ? "hide" : ""
               }`}
               onClick={() => {
@@ -64,7 +62,7 @@ export default function Header({ currentPage, changePage }) {
           <li className="mt-1">
             <a
               href="#Podcast"
-              className={`text-decoration-none text-white ${
+              className={`text-decoration-none text-white border-bottom ${
                 currentPage === "Podcast" ? "hide" : ""
               }`}
               onClick={() => {
@@ -79,7 +77,7 @@ export default function Header({ currentPage, changePage }) {
           <li className="mt-1">
             <a
               href="#Books"
-              className={`text-decoration-none text-white ${
+              className={`text-decoration-none text-white border-bottom ${
                 currentPage === "Books" ? "hide" : ""
               }`}
               onClick={() => {
@@ -94,7 +92,7 @@ export default function Header({ currentPage, changePage }) {
           <li className="mt-1">
             <a
               href="#Contact"
-              className={`text-decoration-none text-white ${
+              className={`text-decoration-none text-white border-bottom ${
                 currentPage === "Contact" ? "hide" : ""
               }`}
               onClick={() => {
