@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Joseph-Landry/static/css/main.88f5199c.css",
-    "main.js": "/Joseph-Landry/static/js/main.233eaec0.js",
+    "main.css": "/Joseph-Landry/static/css/main.461e1105.css",
+    "main.js": "/Joseph-Landry/static/js/main.d512fdad.js",
     "index.html": "/Joseph-Landry/index.html",
-    "main.88f5199c.css.map": "/Joseph-Landry/static/css/main.88f5199c.css.map",
-    "main.233eaec0.js.map": "/Joseph-Landry/static/js/main.233eaec0.js.map"
+    "main.461e1105.css.map": "/Joseph-Landry/static/css/main.461e1105.css.map",
+    "main.d512fdad.js.map": "/Joseph-Landry/static/js/main.d512fdad.js.map"
   },
   "entrypoints": [
-    "static/css/main.88f5199c.css",
-    "static/js/main.233eaec0.js"
+    "static/css/main.461e1105.css",
+    "static/js/main.d512fdad.js"
   ]
 }
